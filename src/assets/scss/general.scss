@@ -1,0 +1,33 @@
+@import "custom";
+@import "bootstrap/scss/bootstrap.scss";
+@import "fonts";
+@import "class";
+@import "animations";
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Playfair Display", serif !important;
+  scroll-behavior: smooth;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+.view {
+  view-timeline-name: --text;
+  view-timeline-axis: y;
+  animation-timeline: --text;
+  animation: slide-x 2s;
+}

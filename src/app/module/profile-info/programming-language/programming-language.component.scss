@@ -1,0 +1,24 @@
+.brands-list {
+  overflow: hidden;
+  &--wrapper {
+    display: grid;
+    grid-template-columns: 100px;
+    grid-auto-flow: column;
+    justify-items: stretch;
+    animation: scroll 15s linear infinite;
+    & img {
+      height: 100px !important;
+      width: 100px !important;
+      max-width: auto !important;
+      background-color: white;
+      padding: 0.3rem;
+      border-radius: 10px;
+    }
+  }
+}
+
+@keyframes scroll {
+  to {
+    translate: calc(-14 * 100px);
+  }
+}

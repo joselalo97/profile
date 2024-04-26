@@ -1,0 +1,66 @@
+@keyframes bounce {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-x {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-y {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animation {
+  view-timeline-name: --subjectReveal;
+  /* Chromium supports the new x/y syntax */
+  view-timeline-axis: y;
+  /* Firefox still supports the old horizontal/vertical syntax */
+  view-timeline-axis: horizontal;
+  animation-fill-mode: both;
+  animation-name: slide-y;
+  animation-timeline: --subjectReveal;
+  animation-duration: 0; /* Firefox requires this to apply the animation */
+}
+
+.animation-x {
+  view-timeline-name: --sd;
+  /* Chromium supports the new x/y syntax */
+  view-timeline-axis: y;
+  /* Firefox still supports the old horizontal/vertical syntax */
+  view-timeline-axis: horizontal;
+  animation-fill-mode: both;
+  animation-name: slide-x;
+  animation-timeline: --sd;
+  animation-duration: 0; /* Firefox requires this to apply the animation */
+}
+
+.slide-y {
+  animation: slide-y 1s ease-in-out;
+}
+
+.slide-x {
+  animation: slide-x 1s ease-in-out forwards;
+}
+
+.bounce {
+  animation: bounce 1s ease-in-out;
+}

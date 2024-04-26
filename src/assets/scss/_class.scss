@@ -1,0 +1,29 @@
+.glass {
+  backdrop-filter: blur(10px);
+  background-color: rgba($color: #eee, $alpha: 0.1);
+}
+
+.f-mono {
+  font-family: "Cutive Mono", monospace;
+}
+
+.f-play {
+  font-family: "Playfair Display", serif;
+}
+
+.f-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.vh {
+  min-height: 100vh;
+}
+
+.box-icon {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+}

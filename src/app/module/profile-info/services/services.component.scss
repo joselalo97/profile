@@ -1,0 +1,7 @@
+.card {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: var(--bs-secondary);
+    transform: scale(1.0525);
+  }
+}
