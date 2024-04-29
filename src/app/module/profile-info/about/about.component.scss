@@ -1,0 +1,9 @@
+.text-op {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  transform: translate(-50%,-50%) rotate(-45deg);
+  font-size: 10rem;
+  opacity: .1;
+}

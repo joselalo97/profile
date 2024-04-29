@@ -1,0 +1,16 @@
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button,
+.p-galleria .p-galleria-indicators .p-galleria-indicator.p-highlight button {
+  background-color: var(--bs-success) !important;
+}
+
+.p-carousel .p-carousel-content .p-carousel-next,
+.p-carousel .p-carousel-content .p-carousel-prev {
+  color: var(--bs-success);
+}
+
+.p-carousel .p-carousel-content .p-carousel-prev:enabled:hover,
+.p-carousel .p-carousel-content .p-carousel-next:enabled:hover {
+    background-color: var(--bs-success);
+    color: var(--bs-dark);
+    border-radius: 50%;
+}

@@ -10,47 +10,46 @@
 @keyframes slide-x {
   0% {
     transform: translateX(100px);
-    opacity: 0;
   }
   100% {
     transform: translateX(0);
-    opacity: 1;
   }
 }
 
 @keyframes slide-y {
   0% {
-    opacity: 0;
-    transform: translateY(-100px);
+    transform: translateY(100px);
   }
   100% {
-    opacity: 1;
     transform: translateY(0);
   }
 }
 
 .animation {
-  view-timeline-name: --subjectReveal;
-  /* Chromium supports the new x/y syntax */
+  view-timeline-name: --slide-y;
   view-timeline-axis: y;
-  /* Firefox still supports the old horizontal/vertical syntax */
-  view-timeline-axis: horizontal;
-  animation-fill-mode: both;
+  view-timeline-axis: vertical;
   animation-name: slide-y;
-  animation-timeline: --subjectReveal;
-  animation-duration: 0; /* Firefox requires this to apply the animation */
+  animation-timeline: --slide-y;
+  animation-duration: 1ms;
+}
+
+.animation-opacity {
+  view-timeline-name: --opac;
+  view-timeline-axis: y;
+  view-timeline-axis: vertical;
+  animation-name: bounce;
+  animation-timeline: --opac;
+  animation-duration: 1ms;
 }
 
 .animation-x {
-  view-timeline-name: --sd;
-  /* Chromium supports the new x/y syntax */
+  view-timeline-name: --slide-x;
   view-timeline-axis: y;
-  /* Firefox still supports the old horizontal/vertical syntax */
-  view-timeline-axis: horizontal;
-  animation-fill-mode: both;
+  view-timeline-axis: vertical;
   animation-name: slide-x;
-  animation-timeline: --sd;
-  animation-duration: 0; /* Firefox requires this to apply the animation */
+  animation-timeline: --slide-x;
+  animation-duration: 1ms;
 }
 
 .slide-y {
@@ -58,7 +57,7 @@
 }
 
 .slide-x {
-  animation: slide-x 1s ease-in-out forwards;
+  animation: slide-x 1s ease-in-out;
 }
 
 .bounce {

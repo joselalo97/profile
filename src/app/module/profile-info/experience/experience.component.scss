@@ -1,0 +1,35 @@
+.exp-line-content {
+  position: relative;
+  &::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--bs-success);
+    top: 20%;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+  &::after {
+    content: "";
+    left: 0;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    background-color: var(--bs-success);
+  }
+
+  &:last-child {
+    &::after {
+      height: 80%;
+      top: 60%;
+    }
+  }
+}
+
+.carousel-item{
+  background-color: rgba($color: #000000, $alpha: .6);
+}

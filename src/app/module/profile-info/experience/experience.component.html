@@ -1,0 +1,155 @@
+<div class="vh bg-warning p-3 d-flex">
+  <div class="col-10 col-md-10 m-auto">
+    <h3 class="text-success fs-1 f-mono" data-hidden>Experiencia Laboral</h3>
+    <div class="exp-line-content p-3 text-light f-mono">
+      <div class="row justify-content-between" data-hidden-up>
+        <div class="col-12 col-md-5 p-3">
+          <span
+            class="exp-line-content--date border border-2 border-success px-2 py-1 rounded-pill"
+          >
+            2019 - 2021
+          </span>
+          <span class="exp-line-content--position d-block mt-2">
+            Desarrollador Web Jr. - Intabi Company
+          </span>
+          <ul>
+            <li>
+              Desarrollo de plataforma de consulta médica y seguimiento de
+              paciente
+            </li>
+            <li>
+              Desarrollo de plataforma de punto de control de ventas e
+              inventario
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card bg-transparent border-0 flex justify-content-center">
+            <p-carousel
+              [value]="list"
+              [numVisible]="1"
+              [numScroll]="1"
+              orientation="horizontal"
+              verticalViewPortHeight="100px"
+              [responsiveOptions]="responsiveOptions"
+              [circular]="true"
+              autoplayInterval="1500"
+            >
+              <ng-template let-frame pTemplate="item">
+                <div
+                  style="width: 100px; height: 100px"
+                  class="p-3 d-flex justify-content-center align-items-center m-auto bg-white rounded"
+                >
+                  <img
+                    [src]="frame.img"
+                    [alt]="frame.alt"
+                    class="img-fluid"
+                    height="80"
+                    width="80"
+                  />
+                </div>
+              </ng-template>
+            </p-carousel>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="exp-line-content p-3 text-light f-mono">
+      <div class="row justify-content-between" data-hidden-up>
+        <div class="col-12 col-md-5 p-3">
+          <span
+            class="exp-line-content--date border d-inline border-2 border-success px-2 py-1 rounded-pill"
+          >
+            2022
+          </span>
+          <span class="exp-line-content--position d-block mt-2">
+            Profesional Operativo - Suprema Corte de Justicia
+          </span>
+          <ul>
+            <li>Desarrollo de plataformas de Consulta Jurídica SCJN</li>
+            <li>Plataforma OPEN DATA</li>
+            <li>Plataformas de Captura de Información</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card bg-transparent border-0 flex justify-content-center">
+            <p-carousel
+              [value]="list2"
+              [numVisible]="1"
+              [numScroll]="1"
+              orientation="horizontal"
+              verticalViewPortHeight="100px"
+              [responsiveOptions]="responsiveOptions"
+              [circular]="true"
+              autoplayInterval="1500"
+            >
+              <ng-template let-frame pTemplate="item">
+                <div
+                  style="width: 100px; height: 100px"
+                  class="p-3 d-flex justify-content-center align-items-center m-auto bg-white rounded"
+                >
+                  <img
+                    [src]="frame.img"
+                    [alt]="frame.alt"
+                    class="img-fluid"
+                    height="80"
+                    width="80"
+                  />
+                </div>
+              </ng-template>
+            </p-carousel>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="exp-line-content p-3 text-light f-mono">
+      <div class="row justify-content-between" data-hidden-up>
+        <div class="col-12 col-md-5 p-3">
+          <span
+            class="exp-line-content--date border d-inline border-2 border-success px-2 py-1 rounded-pill"
+          >
+            2023
+          </span>
+          <span class="exp-line-content--position d-block mt-2">
+            Freelance - INDEP
+          </span>
+          <ul>
+            <li>
+              Migación de sistema de administración de bienes desarrollado en
+              oracle forms
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card bg-transparent border-0 flex justify-content-center">
+            <p-carousel
+              [value]="list3"
+              [numVisible]="1"
+              [numScroll]="1"
+              orientation="horizontal"
+              verticalViewPortHeight="100px"
+              [responsiveOptions]="responsiveOptions"
+              [circular]="true"
+              autoplayInterval="1500"
+            >
+              <ng-template let-frame pTemplate="item">
+                <div
+                  style="width: 100px; height: 100px"
+                  class="p-3 d-flex justify-content-center align-items-center m-auto bg-white rounded"
+                >
+                  <img
+                    [src]="frame.img"
+                    [alt]="frame.alt"
+                    class="img-fluid"
+                    height="80"
+                    width="80"
+                  />
+                </div>
+              </ng-template>
+            </p-carousel>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
