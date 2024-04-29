@@ -1,11 +1,12 @@
-// .wrapper {
-//   scroll-snap-type: y mandatory;
-//   scroll-behavior: smooth;
+.wrapper {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 
-//   & app-present,
-//   app-about,
-//   app-services,
-//   app-programming-language {
-//     scroll-snap-align: start;
-//   }
-// }
+  & app-present,
+  app-about,
+  app-services,
+  app-programming-language,
+  app-experience {
+    scroll-snap-align: start;
+  }
+}
