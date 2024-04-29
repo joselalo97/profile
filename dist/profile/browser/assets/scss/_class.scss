@@ -1,0 +1,40 @@
+.glass {
+  backdrop-filter: blur(10px);
+  background-color: rgba($color: #eee, $alpha: 0.1);
+}
+
+.f-mono {
+  font-family: "Cutive Mono", monospace;
+}
+
+.f-play {
+  font-family: "Playfair Display", serif;
+}
+
+.f-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.vh {
+  min-height: 100vh;
+}
+
+.box-icon {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+}
+
+[data-hidden] {
+  opacity: 0;
+  transition: all 0.4s 0.2s ease-in-out;
+}
+
+[data-hidden-up] {
+  opacity: 0;
+  transform: translateX(0);
+  transition: all 0.4s 0.2s ease-in-out;
+}

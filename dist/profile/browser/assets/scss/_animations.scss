@@ -1,0 +1,65 @@
+@keyframes bounce {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-x {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-y {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animation {
+  view-timeline-name: --slide-y;
+  view-timeline-axis: y;
+  view-timeline-axis: vertical;
+  animation-name: slide-y;
+  animation-timeline: --slide-y;
+  animation-duration: 1ms;
+}
+
+.animation-opacity {
+  view-timeline-name: --opac;
+  view-timeline-axis: y;
+  view-timeline-axis: vertical;
+  animation-name: bounce;
+  animation-timeline: --opac;
+  animation-duration: 1ms;
+}
+
+.animation-x {
+  view-timeline-name: --slide-x;
+  view-timeline-axis: y;
+  view-timeline-axis: vertical;
+  animation-name: slide-x;
+  animation-timeline: --slide-x;
+  animation-duration: 1ms;
+}
+
+.slide-y {
+  animation: slide-y 1s ease-in-out;
+}
+
+.slide-x {
+  animation: slide-x 1s ease-in-out;
+}
+
+.bounce {
+  animation: bounce 1s ease-in-out;
+}
